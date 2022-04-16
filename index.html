@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Link for all the icons-->
     <title>Portfolio</title>
 </head>
 <body>
 <header class="header">
-    <a href="index.html"><img src="images/logo.png" alt="creative logo of letter S"></a>
+    <ul class="logosec">
+        <li> <a href="index.html"><img src="images/logo.png" alt="creative logo of letter S"></a></li>
+        <li><i class="fa fa-bars fa-2x" aria-hidden="true"></i></li>
+    </ul>
+    
+   
+    <div class="nav">
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -18,15 +24,13 @@
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
+    </div>
 
 </header>
 <main>
     <div class="container">
     <div class="dpt">
-        <div class="text">
-        <h1>Hi! This is Shah</h1>
-        <h4>A UX/UI Designer + Developer.</h4>
-        </div>
+        
         <div class="textpic"> 
         <picture>
 
@@ -56,8 +60,13 @@
         </picture>
         
         </div>
+        <div class="text">
+            <h1>Hi! This is Shah</h1>
+            <h4>A UX/UI Designer + Developer.</h4>
+            </div>
         <div class="hire">
-            <button>Hire Me</button>
+            <button><a href="contact.html">Hire Me</a></button>
+            
         </div>
     </div>
 
@@ -84,6 +93,7 @@
     <div class="footer">
     <div class="footerlogo">
         <a href="index.html"><img src="images/logo.png" alt="creative logo of letter S"></a>
+        
     </div>
     <div class="footer-social">
             
