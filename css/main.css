@@ -215,6 +215,7 @@ h2{
     background-color: var(--clr-sec);
     padding: 30px 40px 30px 40px;
     border-radius: 35px; 
+    margin-bottom: 20px;
 }
 
 .disc.ideate.implement,h3{
@@ -234,7 +235,7 @@ h2{
     display: none;
 }
 
-.footerlogo{
+.footer{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -257,6 +258,7 @@ h2{
 }
 .footerlogo{
     display: flex;
+    justify-content: center;
     
 }
 .footer-social ul{
@@ -279,3 +281,178 @@ h2{
     padding-right: 15px;
 }
 
+.mail{
+    display: none;
+
+}
+
+.number{
+    display: none;
+}
+
+/* Homepage destkop  */
+@media only screen and (min-width: 600px){
+
+    .logosec i{ /*Hamburger icon hidden for larger screens */
+        display: none;
+    }
+
+    .header {
+    display: flex;
+    
+
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav ul {
+        background-color:var(--clr-sec);
+        flex-direction: row;
+        
+        
+    }
+
+    .nav li a{
+        color: var(--clr-headings);
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    #home a{
+        color: #FFFFFF;
+    }
+
+    .nav li a:hover {
+        color: var(--clr-bg);
+    }
+
+    .dpt {
+        display: flex;
+        flex-direction: row-reverse;
+        border-bottom: solid 1px #FFFFFF;
+
+    }
+
+    .textpic img {
+        width: 490px;
+        height: auto;
+        margin-top: 30px;
+    }
+    .description {
+        padding-right: 20px;
+    }
+
+    .hire button{
+        margin-top: 15px;
+       
+        
+    }
+
+    .work{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 33% 33% 33%;
+        grid-column-gap:20px ;
+        line-height: 100px;
+        
+        
+    }
+
+    .disc{
+        
+        height: 300px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+
+       
+
+    }
+
+    .ideate{
+        
+        margin-top: 22px;
+        height: 300px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+
+
+    }
+    .implement{
+       
+        margin-top: 22px;
+        padding-top: 0px;
+        height: 300px;
+        padding-bottom: 5px;
+
+       
+        
+
+    }
+    .disc.ideate.implement,h3{
+        color:var(--clr-headings);
+        text-align: center;
+        font-family:var(--text-font);
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-bottom: 0px;
+        
+    }
+    .disc.ideate.implement,p{
+        
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+        margin-top: 0px;
+        
+        
+    }
+    .footer{
+        display: flex;
+        margin-bottom: 0px;
+
+    }
+
+    .footerlogo{
+        justify-content: flex-start;
+        
+    }
+
+    .footer-social{
+        display: flex;
+    }
+
+    .mail{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .number{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 0px;
+    }
+
+    .mail a{
+        text-decoration: none;
+        color:var(--clr-bg-sec)
+    }
+    .number{
+        color: var(--clr-bg-sec);
+    }
+
+
+
+
+
+
+
+
+}
