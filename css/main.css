@@ -84,7 +84,7 @@ body{
 
 .header{
     background-color: var(--clr-sec);
-    margin: -20px -40px -20px -40px;
+    margin: -20px -40px -20px -40px;  /*negative margins for header to bleed */
 }
 
 .nav{
@@ -112,7 +112,7 @@ body{
 .nav li:hover{
     background-color: var(--clr-headings);
     transition:all 2s;
-    transform: scale(0.5);
+    transform: scale(0.5);  /*Css animation ft, scaling */
     
     
 }
@@ -121,7 +121,6 @@ body{
 .nav li a{
     text-decoration: none;
     color:var(--clr-text-sec);
-    font: var(--heading-font);
     font-size: 25px;
     width: 100%;
 }
@@ -186,7 +185,7 @@ h1{
     background-color: var(--clr-sec);
 }
 
-.hire a{
+.hire button{
     text-decoration: none;
     color: var(--clr-text);
 }
@@ -260,20 +259,21 @@ h2{
 .footer{
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     background-color: var(--clr-sec);
     background-color: var(--clr-sec);
     margin-left:  -40px;
     margin-right: -40px;
     padding:15px;
-    margin-bottom: 0px;
+   
     
     
 }
 .footerlogo{
     display: flex;
     justify-content: center;
+   
     
     
 }
@@ -286,6 +286,7 @@ h2{
     display:flex ;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 5px;
     
     
 }
@@ -353,7 +354,7 @@ h2{
 
     .dpt {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row-reverse;  /*row reverse so image and text switch places */
         border-bottom: solid 1px #FFFFFF;
 
     }
@@ -436,7 +437,7 @@ h2{
         
     }
     .footer{
-        display: flex;
+        flex-direction: row;
         margin-bottom: 0px;
 
     }
@@ -450,26 +451,7 @@ h2{
         display: flex;
     }
 
-    .mail{
-        display: flex;
-        justify-content: flex-end;
-        
-    }
-    .number{
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 0px;
-    }
-
-    .mail a{
-        text-decoration: none;
-        color:var(--clr-bg-sec)
-    }
-    .number{
-        color: var(--clr-bg-sec);
-    }
-
-
+  
 
 
 
@@ -515,6 +497,10 @@ h2{
     color: var(--clr-headings);
 }
 
+.footer{
+    margin-bottom: 0px;
+}
+
 
 
 /*about large screens */
@@ -525,7 +511,7 @@ h2{
         grid-template-rows: 100%;
     }
 
-    }
+    
     .mypic{
         margin-top: 30px;
         
@@ -554,6 +540,8 @@ h2{
         font-size: 2.2vw;
         margin-top: 20px;
     }
+
+    
 }
    
    
