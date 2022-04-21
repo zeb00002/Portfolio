@@ -111,7 +111,12 @@ body{
 
 .nav li:hover{
     background-color: var(--clr-headings);
+    transition:all 2s;
+    transform: scale(0.5);
+    
+    
 }
+
 
 .nav li a{
     text-decoration: none;
@@ -121,6 +126,13 @@ body{
     width: 100%;
 }
 
+.nav li a{
+    color: #FFFFFF;
+}
+
+.nav li a:hover{
+    color: #0B0C10;
+}
 
 .nav li{
     text-decoration: none;
@@ -243,22 +255,31 @@ h2{
 
 .footerlogo img{
     width: 98px;
+    
 }
 .footer{
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: var(--clr-sec);
     background-color: var(--clr-sec);
     margin-left:  -40px;
     margin-right: -40px;
     padding:15px;
+    margin-bottom: 0px;
     
     
 }
 .footerlogo{
     display: flex;
     justify-content: center;
+    
+    
+}
+
+.footer-social{
+    margin-top: 40px;
     
 }
 .footer-social ul{
@@ -327,7 +348,7 @@ h2{
     }
 
     .nav li a:hover {
-        color: var(--clr-bg);
+        color:#0B0C10;
     }
 
     .dpt {
@@ -494,16 +515,16 @@ h2{
     color: var(--clr-headings);
 }
 
-#about a{
-    color: #FFFFFF;
-}
+
+
 /*about large screens */
 @media only screen and (min-width: 600px){
-   
     .zama{
         display: grid;
         grid-template-columns: 50% 1fr;
         grid-template-rows: 100%;
+    }
+
     }
     .mypic{
         margin-top: 30px;
@@ -533,8 +554,10 @@ h2{
         font-size: 2.2vw;
         margin-top: 20px;
     }
-
 }
+   
+   
+
 
 /*contact mobile first */
 
@@ -633,15 +656,22 @@ h1{
 
 }
 
+.h3 h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
 .logocreat,.webdev,.photography,p{
     margin-top: 40px;
 }
 
-@media only screen and (min-width:600px){
+
+@media only screen and (min-width:700px){
 
     .services{
         grid-template-columns: 1fr 1fr 1fr;
          grid-column-gap: 20px;
+        
         
     }
 
@@ -657,9 +687,148 @@ h1{
         height: 100%;
     }
 
+    .footer{
+        margin-top: 0px;
+    }
+
   
 
    
 
 
+}
+
+/*Web first Portfolio page */
+
+.portfolio{
+
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-gap:20px;
+    margin-left: 5%;
+    
+    
+    
+    
+
+}
+
+.website{
+    background-color: var(--clr-sec);
+    padding-top: 20px;
+    border-radius: 40px;
+    height: 300px;
+    
+}
+
+.website img{
+    width:80%;
+    height: 60%;
+    padding: 10%;
+    
+    object-position: center;
+    object-fit: cover;
+
+}
+
+
+
+
+.portfolio img{
+    width:80%;
+    height: 60%;
+    padding: 10%;
+    
+    object-position: center;
+    object-fit: cover;
+
+}
+
+.logo1{
+    padding-top: 20px;
+    border-radius: 40px;
+    height: 300px;
+}
+
+.logo1 img{
+    object-fit:fill;
+}
+
+.logo2{
+    padding-top: 20px;
+    border-radius: 40px;
+    height: 300px;
+}
+
+.logo2 img{
+    object-fit: fill;
+}
+
+.interviews{
+    padding-top: 20px;
+    border-radius: 40px;
+    height: 300px;
+}
+
+.interviews img{
+    object-fit: fill;
+}
+
+.github{
+    padding-top: 20px;
+    border-radius: 40px;
+    height: 300px;
+}
+
+.github img{
+    object-fit: fill;
+}
+
+.photos{
+    padding-top: 20px;
+    border-radius: 40px;
+    height: 300px;
+}
+
+
+.logo1{
+    background-color: var(--clr-sec);
+    padding-top: 20px;
+}
+
+.logo2{
+    background-color: var(--clr-sec);
+    padding-top: 20px;
+}
+
+.interviews{
+    background-color: var(--clr-sec);
+    padding-top: 20px;
+}
+
+.github{
+    background-color: var(--clr-sec);
+    padding-top: 20px;
+}
+
+.photos{
+    background-color: var(--clr-sec);
+    padding-top: 20px;
+}
+
+@media only screen and (max-width:900px){
+    .portfolio{
+        grid-template-columns: repeat(2,48%);
+    }
+}
+
+@media only screen and (max-width:600px){
+    .portfolio{
+        grid-template-columns: repeat(1,99%);
+    }
 }
